@@ -41,10 +41,12 @@ body, .app {
 
 .bookshelf-title {
   border-bottom: 1px solid #dedede;
+  text-align: center;
 }
 
 .bookshelf-books {
   text-align: center;
+ 
 }
 
 .open-search {
@@ -87,7 +89,7 @@ body, .app {
 
 .search-books-input-wrapper {
   flex: 1;
-  background: #e9e;
+  background: rgb(218, 218, 218);
 }
 
 .search-books-bar input {
@@ -131,11 +133,13 @@ button:active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .books-grid li {
   padding: 10px 15px;
   text-align: left;
+  
 }
 
 .book {
@@ -182,6 +186,10 @@ button:active {
   height: 100%;
   opacity: 0;
   cursor: pointer;
+}
+
+.current-option {
+  font-weight: bold;
 }
 
 /* book cover */
