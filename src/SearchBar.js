@@ -14,6 +14,7 @@ class SearchBar extends Component {
 
   handleSearchTermChange = (event) => {
     const query = event.target.value.trim();
+
     if (query === "") {
       this.setState({
         books: [],

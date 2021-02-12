@@ -21,17 +21,21 @@ To get started developing right away:
 │   ├── favicon.ico # React Icon, You may change if you wish.
 │   └── index.html # DO NOT MODIFY
 └── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
+    ├── App.css # Styles for the app.
+    ├── App.js # This is the root of the app. Handles routing.
     ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
     ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
+    ├── icons # Helpful images for the app. 
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
-```
+    ├── index.css # Global styles.
+    └── index.js # Used for DOM rendering only.
+    ├── Book.js # Fetches and renders book info from the API. Updates Shelf through the API.
+    ├── BooksList.js # Fetches books info from the API. Handles updates in book category (wantToRead, read, currentlyReading). Renders one <Shelf /> per category.
+    ├── constants.js # Global constants.
+    ├── SearchBar.js # Calls the API with a search term and renders the results.
+    ├── Shelf.js # Renders an array of books.
 
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
